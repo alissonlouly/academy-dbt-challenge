@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: erp
+    database: adventureworks-dw-394319  
+    schema: sap_adw
+    description: Fonte de dados das vendas do SAP Adventure Works
+    tables:
+      - name: customer
+        columns:
+          - name: customerid
+            tests:
+             - unique
+             - not_null
+                
+      
+         
+    
