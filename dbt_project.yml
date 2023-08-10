@@ -36,7 +36,15 @@ models:
     
     # Applies to all files under models/example/
     example:
-      materialized: view
+      +materialized: view
+
+    staging: 
+      +materialized: view
+      +schema: stg
+
+    marts:
+      +materialized: table
+      +schema: marts
 
 
 seeds:
