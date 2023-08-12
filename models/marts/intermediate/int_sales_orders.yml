@@ -1,0 +1,9 @@
+models:
+  - name: int_sales_orders
+    description: Modelo intemediário para a construação da fatoVendas
+    columns:
+          - name: pk_vendas
+            description: Chave primária da tabela int_sales_orders
+            tests:
+             - unique
+             - not_null
