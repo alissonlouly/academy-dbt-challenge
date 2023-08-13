@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_loc
+    description: Tabela dimensão de localizações  
+    columns:
+        - name: enderecoID
+          description: Chave primária da tabela de localizações
+          tests:
+            - unique
+            - not_null

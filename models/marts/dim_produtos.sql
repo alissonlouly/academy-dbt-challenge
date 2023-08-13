@@ -19,9 +19,9 @@ with
 
     join_produtos_categorias as (
         select
-            erp_produtos.pk_productID,
-            erp_produtos.fk_produtosubcategoriaID,
-            erp_subcategoria.fk_produtocategoriaID,
+            erp_produtos.produtoID,
+            erp_produtos.produtosubcategoriaID,
+            erp_subcategoria.produtocategoriaID,
             erp_categoria.categoriaProduto,
             erp_subcategoria.subcategoriaProduto,
             erp_produtos.nomeProduto,
@@ -33,8 +33,8 @@ with
             
             
         from erp_produtos
-        left join erp_subcategoria on erp_produtos.fk_produtosubcategoriaID = erp_subcategoria.pk_subcategoriaProdutoID
-        left join erp_categoria on erp_subcategoria.fk_produtocategoriaID = erp_categoria.pk_categoriaProdutoID
+        left join erp_subcategoria on erp_produtos.produtosubcategoriaID = erp_subcategoria.subcategoriaProdutoID
+        left join erp_categoria on erp_subcategoria.produtocategoriaID = erp_categoria.categoriaProdutoID
         
     )
 
