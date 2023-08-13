@@ -67,11 +67,7 @@ sources:
              - unique
              - not_null
       - name: salesorderheadersalesreason
-        columns:
-          - name: salesreasonid
-            tests:
-             - unique
-             - not_null
+        
       - name: salesreason 
         columns:
           - name: salesreasonid
@@ -81,7 +77,7 @@ sources:
       
       - name: salesorderheader 
         columns:
-          - name: salesorderheaderid
+          - name: salesorderid
             tests:
              - unique
              - not_null

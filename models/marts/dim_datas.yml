@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_datas
+    description: Tabela de dimensão de datas  
+    columns:
+        - name: data
+          description: Chave primária da tabela de datas
+          tests:
+            - unique
+            - not_null

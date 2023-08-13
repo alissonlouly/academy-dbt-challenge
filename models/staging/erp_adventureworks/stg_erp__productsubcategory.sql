@@ -9,8 +9,8 @@ source as (
 renamed as (
 
     select
-        cast(productsubcategoryid as int) as pk_subcategoriaProdutoID,
-        cast (productcategoryid as int) as fk_produtocategoriaID,
+        cast(productsubcategoryid as int) as subcategoriaProdutoID,
+        cast (productcategoryid as int) as produtocategoriaID,
         cast (name as string) as subcategoriaProduto
         
 
