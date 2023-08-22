@@ -82,4 +82,10 @@ sources:
              - unique
              - not_null
       - name: salesorderdetail 
+      - name: countryregion  
+        columns:
+          - name: countryregioncode
+            tests:
+             - unique
+             - not_null
         
