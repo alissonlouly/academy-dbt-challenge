@@ -21,8 +21,8 @@
             erp_pessoas.tipoPessoa,
             erp_pessoas.tipoCartao
             
-        from erp_clientes
-        left join erp_pessoas on erp_clientes.clienteID = erp_pessoas.businessID
+        from erp_pessoas
+        inner join erp_clientes on erp_pessoas.businessID = erp_clientes.pessoaID
     )
 
     select *
