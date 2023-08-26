@@ -26,8 +26,9 @@ join_person_credit_card as (
         source_credit_card.cardtype as tipoCartao
 
     from source_person
-    left join source_credit_card on source_person_card.creditcardid = source_credit_card.creditcardid
     left join source_person_card on source_person.businessentityid = source_person_card.businessentityid
+    left join source_credit_card on source_person_card.creditcardid = source_credit_card.creditcardid
+    
     
 
 )
